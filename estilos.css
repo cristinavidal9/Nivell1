@@ -74,3 +74,9 @@ flex-flow: column nowrap;
         background:#9A0680 ;
         width: 100%;
     }
+@media all and (Max-Width: 800px){
+    .seccion{
+        background: #FFC900 ;
+        flex-direction: column;
+    }
+}
