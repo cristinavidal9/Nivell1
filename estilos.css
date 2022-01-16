@@ -79,4 +79,27 @@ flex-flow: column nowrap;
         background: #FFC900 ;
         flex-direction: column;
     }
+@media all and (Max-Width: 405px){
+    .menu{
+        flex-direction: column; 
+               
+    }
+    .seccion{
+        background: rgb(195, 195, 44);
+    }
+    .articulos{
+        flex-direction: column;
+    }
+    .logo{
+        width: 90%;        
+    }
+    .nav{
+        width: 90%;
+    }
+    .social{
+        width: 90%;
+    }
+    }
+
+    
 }
