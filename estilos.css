@@ -1,6 +1,6 @@
 *{
     max-width: 1200px;
-    margin: 0px ;
+    margin: 0px auto ;
     padding: 0px;
     box-sizing: border-box;
     
@@ -27,8 +27,7 @@ flex-flow: column nowrap;
     background-size: cover;
     display: flex;
     flex-flow: column nowrap;
-    
-    
+       
     }
     .menu{
         display: flex;
