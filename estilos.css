@@ -28,21 +28,25 @@ flex-flow: column nowrap;
     display: flex;
     flex-flow: column nowrap;
     
+    
     }
     .menu{
         display: flex;
         flex-flow: row nowrap;
         align-items: center;        
         padding: 40px 0 75px 0;
+        animation: moverAbajo 1s ease-in; 
         
     }
         .logo{
             flex:  1 1 auto;
             justify-content: center;
+                       
         }
             
         .nav{            
-            flex: 5 1 auto;            
+            flex: 5 1 auto;
+                        
         }
             .nav a{
                 color: rgb(42, 32, 32);
@@ -50,6 +54,8 @@ flex-flow: column nowrap;
                 text-transform: uppercase;
                 padding: 0 45px;
                 letter-spacing: 3px;
+                display: inline-block;
+                
             }
                 .nav a:hover{
                     color: burlywood;
@@ -79,6 +85,7 @@ flex-flow: column nowrap;
         h1{
             color: rgba(255, 115, 0, 0.411);
             font-size: 25px;
+            animation: moverIzquierda 1s ease-in;
         }
     .seccion{
         background: #cfcfd1;
@@ -170,6 +177,28 @@ flex-flow: column nowrap;
             width: 100%;
             text-align: center;
             }
+    @keyframes moverIzquierda{
+        0%{
+            opacity: 0;
+            transform: translateX(-100px) ;
+        }
+            
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }   
+    }
+    @keyframes moverAbajo{
+        0%{
+            opacity: 0;
+            transform: translateY(-100px) ;
+        }
+            
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }   
+    }
     @media all and (Max-Width: 997px){
     .seccion{
         flex-direction: column;
@@ -187,6 +216,7 @@ flex-flow: column nowrap;
         justify-content: center;
         border: none;
     }
+    
     @media all and (Max-Width: 700px){
     .articulos{
         display:flex;
@@ -209,8 +239,7 @@ flex-flow: column nowrap;
     .articulos{
         display:flex;
         flex-direction: column;
-  
-}
+    }
+ }  
 
-}     
     }
