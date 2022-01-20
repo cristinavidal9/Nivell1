@@ -21,7 +21,7 @@ flex-flow: column nowrap;
 }
 
 .header{
-    background: url(../imagenes/japo.jpg);
+    background: url(imagenes/japo.jpg);
     background-position: center;
     background-attachment: contain;
     background-size: cover;
